@@ -21,8 +21,11 @@ public class locker {
           System.out.println("1. List Down All Files \n2. Bussiness Level Operation \n3. Exit Form Application");
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter As Yours Choice");
+       try{ System.out.println("Enter As Yours Choice");
         user = sc.nextInt();
+       }catch (Exception e){
+           System.out.println("Write valid number");
+       }
 
         if (user == 1) {
             System.out.println("only one directory is there - c:\\LockersMe");
